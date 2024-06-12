@@ -1,20 +1,48 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem; */
+  background-color: rgb(30, 30, 37); 
+ font-family: sans-serif;
+ /* margin: 0; */
   /* text-align: center; */
 }
 
+.container {
+  background-color: #21222A;
+}
+
+.icons {
+  height: 45px;
+}
 
 .nav { 
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
-
+  align-items: center;
+  background-color: #21222A;
+  padding: 30px 25px;
 }
 
+.nav > h3, nav > h4 {
+  margin: 0;
+}
+
+.nav > h3 {
+  color: #61Dafb;
+  margin-right: auto;
+  font-weight: 700;
+}
+
+.nav > h4 {
+  color: #deebf8;
+  font-weight: 600;
+  font-size: 20px;
+}
 .nav-img{
-  width: 80px;
+  width: 60px;
+  padding: 2px;
+  margin-right: 7px;
 }
 .nav-items{ 
   display: flex;
@@ -31,30 +59,57 @@
   margin-left: 23px;
   padding: 7px;
 }
+.content {
+  color: white;
+  background-color: #282D35;
+  background-image: url(./assets/reactjs-icon.png);
+  background-repeat: no-repeat;
+  background-position: right 75%;
+  padding: 57px 27px;  
+}
+
+.content > h1 {
+  margin: 0;
+  letter-spacing: -0.05em;
+  font-size: 39px;
+}
+
+
+.content-list {
+  font-size: 20px;
+  margin-top: 46px;
+}
+ 
+.content-list > li {
+  list-style-type: disc;
+  padding-block: 10px;
+  line-height: 19px;
+  max-width: 400px;
+
+}
+.content-list > li::marker{
+  font-size: 1.4rem;
+  color: #61Dafb
+}
+
 
 .footer {
   background-color: grey;
   padding: 10px;
   border-radius: 3px;
-  position: relative;
-}
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  position: absolute;
+  width: 99%;
+  left: 0; 
+  bottom: 0;
+  text-align: center;
 }
 
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
+.nav-img:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
+@keyframes nav-img-spin {
   from {
     transform: rotate(0deg) ;
   }
@@ -63,11 +118,29 @@
   }
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  a:nth-of-type(2) .nav-img {
+    animation: nav-img-spin infinite 20s linear;
   }
 }
+
+.nav-img {
+  /* height: 6em;
+  padding: 1.5em;
+  will-change: filter; */
+  transition: filter 300ms;
+}
+
+/*
+
+.nav-img:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+
+
+
 
 .card {
   padding: 2em;

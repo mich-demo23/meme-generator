@@ -1,18 +1,24 @@
-import Header from './header'
-import Footer from './footer'
+import Header from './navigation/header'
+import Footer from './navigation/footer'
+
 import './App.css'
 
 function App() {
 
   return (
     <>
-        <div>
+        <div className='container'>
           <Header />
-          <h1>Reasons I&apos;m excited to learn React</h1>
-           <ol>
-            <li>It&apos;s a popular library, so I&apos;ll be able to fit in with the cool kids</li>
-            <li>I&apos;m more likely to get a job as a developer if I know React</li>
-           </ol>
+        <div className="content" >
+        <h1>Fun facts about React</h1>
+        <ul className='content-list'>
+          <li>Was first released in 2013</li>
+          <li>Was originally created by Jordan Walke</li>
+          <li>Has well over 100K stars on Github</li>
+          <li>Is maintained by Facebook</li>
+          <li>Powers thousands of enterprise apps, including mobile apps</li>
+        </ul>
+        </div>
           <Footer />
         </div>
     </>
