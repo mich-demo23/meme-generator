@@ -2,31 +2,32 @@
 //Airbnb
 
 import Header from './components/header'
-import Hero from './components/hero'
-import cardsdata from './data/cardsdata'
-import Card from './components/card'
+import Travel from './components/travel'
 import Footer from './components/footer'
 
+import traveljournal from './data/traveljournal'
 import './App.css'
 
 function App() {
 
-      const cardElements = cardsdata.map(data => {
-        return <Card 
-                      key = {data.id}
-                      {...data}
-
+    const traveldata = traveljournal.map(data => {
+      return (
+        <Travel 
+          key = {data.id}
+         {...data}
         />
-      })
-  
+      )
+    })
+
+
+    console.log(traveldata)
 
   return (
     <div>
         <Header />
-        <Hero />
-        <div className='card-container-parent'>
-        {cardElements}
-          </div>
+        <section className='travel-container'>
+        {traveldata}
+        </section>
         <Footer />
         
      </div> 
