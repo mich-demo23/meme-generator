@@ -1,269 +1,272 @@
 #root {
-  /* max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem; */
-  background-color: rgb(30, 30, 37); 
+  /* padding: 2rem; */
+  background-color: #fff; 
   /* background-color: #21222A; */
-
- font-family: sans-serif;
+position: relative;
+ font-family: sans-serif ;
  /* margin: 0; */
   /* text-align: center; */
-}
-
-.header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.name{
-  color: white;
-  font-size: 30px;
-  font-weight: 700;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* height: 5px; */
-  border-radius: 6px;
-  border-bottom: 2px solid rgb(202, 182, 30);
-  position: relative;
-  padding: 7px;
-  overflow: hidden;
-
-
+  height: max-content;
 }
 
 
-#spinner {
-  height: 30px;
-  width: 30px;
-  border: 7px solid;
-  border-radius: 50%;
-  border-color: red black black black;
-  animation: rotate 1.5s linear infinite;
-
-}
-
-@keyframes rotate  {
-   to  {  transform : rotate(360deg); }
-}
-
-.role{
-  color: white;
-}
-
-.photo{
-  padding-top: 20px;
-  width: 75%;
-  border-radius: 7px;
-}
-
-.links{
+  .nav { 
     display: flex;
     justify-content: space-between;
-    border-radius: 7px;
-    font-weight: 700;
-    font-size: 15px;
-    padding: 10px;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 25px 35px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-search {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+
+    
+  }
+
+  .gray{
+    color: #918E9B;
+  }
+  .bold{
+    font-weight: bold;
+  }
+  .search{
+    margin: 5px 5px;
+    padding: 5px;
+    background-color: rgba(145, 142, 155, 0.4);
+    border-radius: 10px;
+    height: 28px;
+  }
+  .search:hover{
+    cursor: pointer;
+    background-color: rgba(145, 142, 155, 0.8);
+  }
+  .input{
+    
+    color: #fe395c;
     border: 0;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    width: 300px;
+    height: 35px;
+    margin-right: 10px;
+
+    
+  }
+  .input::placeholder{
+    font-family: monospace;
+    letter-spacing: 5px;
+  }
+.airbnb-logo{
+  height: 60px;
 }
 
-.email-icon {
-  width: 35px;
-}
+@media (max-width: 1000px){
 
-.linkedin-icon {
-  width: 35px;
-}
-
-.links > button {
-  display: flex;
-  align-items: center;
-  border-radius: 7px;
-  font-weight: 700;
-  font-size: 15px;
-  padding: 8px;
-  border: 0;
 
 }
 
-.emailbtn {
-  color:  black;
-  margin-right: 15% ;
-}
-
-.linkedinbtn {
-  color: white;
-  background-color: #31849b;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mainbody{
+.hero{
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* width: 400px; */
-  padding-bottom: 50px;
-  color: white
-}
-
-.mainbody-title {
-  margin: 0 50px;
-  padding: 20px 20px;
-}
-
-.mainbody-content{
-  margin: 0 100px;
-}
-
-
-.list {
-  padding: 20px 20px;
-  margin: 0 50px;
-  position: relative;
-
-}
-.list-title {
-  color: white;
-  line-height: 40px;
-}
-
-.list > li {
-  list-style: square;
-  margin: 0 15px;
-  position: relative;
-}
-
-.list >li::marker{
-  color: #a78f17;
-  font-size: 1.5rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container {
-  background-color: #21222A;
-}
-
-.icons {
-  height: 45px;
-}
-
-
-
-.nav { 
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #21222A;
-  padding: 30px 25px;
+  align-content: center;
+  padding: 3%;
 }
 
-.nav > h3, nav > h4 {
-  margin: 0;
+.hero-photogrid{
+  width: 55%;
+  /* max-width:  400px;
+  padding: 20px 20px; */
+  align-self: center; 
 }
 
-.nav > h3 {
-  color: #61Dafb;
-  margin-right: auto;
-  font-weight: 700;
-}
-
-.nav > h4 {
-  color: #deebf8;
+.hero-title{
   font-weight: 600;
-  font-size: 20px;
+  line-height:  39.6px;
+  margin-bottom: 10px;
+  font-size: 56px;
+  }
+  
+  .hero-text{
+    margin-top: 0;
+    font-weight: 300;
+    /* line-height: 17.6px; */
+    text-wrap: wrap;
+    font-family: system-ui;
+  max-width: 800px;
+  margin-left: 10px;
+  
+  font-size: 28px;
+  
+  }
+  
+  
+  .card-container-parent {
+    display: flex;
+     justify-content: space-evenly;
+     overflow-x: hidden;
+     margin-bottom: 60px;
+
+     /* height: auto;
+      */
 }
-.nav-img{
-  width: 60px;
-  padding: 2px;
-  margin-right: 7px;
+  .card-container  {
+
+    display: flex; 
+     position: relative;
+    }
+    
+    .card {
+      /* width: 400px; */
+      /* height: 100%; */
+      /* font-size: 12px; */
+      margin-right: 20px 20px;
+      position: relative;
+      /* flex: 0 0 auto; */
+      font-size: 22px;
+      
+      }
+
+  .card-photo{
+    height: 400px;
+    width: 100%;
+    /* justify-content: center; */
+    /* max-height: 230px; */
+    border-radius: 9px;
+    /* gap: 20px;     */
+    }
+    .card-status {
+      
+      background-color: #fff;
+      position: absolute;
+      /* position: sticky; */
+      border-radius: 3px;
+      padding: 5px;
+      text-align: center;
+      margin-left: 20px;
+      margin-top: 17px;
+      
 }
-.nav-items{ 
-  display: flex;
+.card-info{
+  margin-left: 10px;
+  margin-top: 10px;
+  }
+.card-stats{
+  align-content: center;
+}
+.card-star{
+  height: 18px;
 }
 
-.nav-items :hover{
-  background-color: rgb(23, 198, 222);
-  border-radius: 4px;
-
+.card-title{
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
-.nav-items> li {
-  list-style: none;
-  margin-left: 23px;
-  padding: 7px;
-}
-.content {
-  color: white;
-  background-color: #282D35;
-  background-image: url(./assets/reactjs-icon.png);
-  background-repeat: no-repeat;
-  background-position: right 75%;
-  padding: 57px 27px;  
-}
-
-.content > h1 {
-  margin: 0;
-  letter-spacing: -0.05em;
-  font-size: 39px;
-}
+.card-price {
+  /* margin-left: 10px; */
+  }
+  
+  
+  
+  
+  @media (max-width: 1000px ) {
+    #root{
+      height: 100vh;
+    }
 
 
-.content-list {
-  font-size: 20px;
-  margin-top: 46px;
-}
- 
-.content-list > li {
-  list-style-type: disc;
-  padding-block: 10px;
-  line-height: 19px;
-  max-width: 400px;
+    .airbnb-logo{
+      height: 30px;
+     
+    }
+  
+    .input {
+      height: 25px;
+      width: 200px;
+      margin-right: 0;
+    }
+  
+    .nav-search {
+      margin-right: 0px;
+    }
+    .search {
+      height: 20px;
+  
+    }
+    .hero-photogrid{
+      width: 60%;
+      padding-top: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
 
-}
-.content-list > li::marker{
-  font-size: 1.4rem;
-  color: #61Dafb
-}
 
-summary::marker {
-  color: rgb(173, 84, 84);
-}
 
-details{
-  position: sticky;
-}
+    .hero-title{
+      font-size: 36px;
+    }
+    
+    .hero-text{
+      max-width: 400px;
+      font-size: 16px;
+    }
+  .card-container-parent {
+    overflow-x: auto;
+    justify-content: space-around;
+    margin-bottom: 20px;
 
+    /* width: 1000px; */
+  }
+  .card{
+    font-size: 12px;
+    gap: 20px;
+  }
+  .card-photo{
+    width: 100%;
+    /* height: 230px; */
+    max-height: 230px;
+    /* margin-right: 20px; */
+    
+    }
+   .card-status {
+        margin-left: 7px;
+        margin-top: 10px;
+        
+        }
+        .card-info {
+        }
+        .card-star{
+  
+          height: 14px;
+        }
+        .card-title{
+  width: 150px;
+  font-size: 16px;
+  margin-bottom: 10px;
+        }
+
+        .card-price{
+        }
+      
+     
+  }
 
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: rgb(28, 27, 38);
+  background-color: #fff;
   padding-top: 10px;
   padding-bottom: 15px;
+  border-top: 1px solid  ;
   border-radius: 3px;
   position: relative;
   width: 100%;
@@ -273,8 +276,14 @@ details{
   color: black;
   font-size: 20px;
   font-weight: bold;
-  color: #a78f17;
+  color: #fe395c;
 }
+
+
+.footer{
+  animation: 1.0s forwards;
+}
+
 .footer-logo {
   width: 40px;
   margin: 0 30px 3px 0;
@@ -282,48 +291,135 @@ details{
 }
 
 .footer-logo:hover{
-  filter: drop-shadow(0 0 15px #babe31);
+  filter: drop-shadow(0 0 15px #fe395c );
+  animation: rotate 0.5s linear  infinite  ;
+}
 
+@keyframes rotate {
+  to{ transform: rotate(360deg);}
 }
 
 
-@keyframes nav-img-spin {
-  from {
-    transform: rotate(0deg) ;
+
+
+
+.contacts{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.contact-card{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  border-radius: 10px;
+
+}
+.contact-card > img {
+  height: 200px;
+  padding: 5px 10px;
+  border: 1px solid #fe395c;
+  border-radius: 10px ;
+}
+.contact-card > h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+
+.info-group{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 2px;
+
+}
+
+.info-group > img {
+  height: 25px;
+  margin-right: 4px;
+}
+
+
+.jokes{
+  padding: 0;
+  /* line-height: 10px; */
+  
+}
+.setup{
+  background-color: #918E9B;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.punchline{
+  background-color: rgba(51, 49, 57, 0.7);
+  padding: 20px;
+}
+
+.main{
+  transform: rotate(90deg);
+  height: 40px;
+  margin: auto;
+  z-index: 1;
+}
+
+.battery-top {
+  width: 30px;
+  height: 10px;
+  background: black;
+  margin: 0 auto;
+  border: 3px solid silver;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.battery-content{
+  width: 50px;
+  height: 100px;
+  background: black;
+  position: relative;
+  /* margin: 0 auto; */
+  border: 3px solid silver;
+  border-radius: 18px;
+  padding: 0;
+}
+
+.charge {
+  align-self: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0 ;
+  border-radius: 14px;
+  animation: battery 3s linear infinite  ;
+}
+
+
+@keyframes battery {
+  0% {
+      height: 0%;
+      background: red;
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+      height: 25%;
+      background: orange;
+  }
+      50% {
+      height: 50%;
+      background: yellow;
+  }
+      75% {
+      height: 75%;
+      background: #d7fc83;
+  }
+  100% {
+      height: 100%;
+      background: rgb(0, 255, 0);
   }
 }
 
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .nav-img {
-    animation: nav-img-spin infinite 20s linear;
-  }
-}
-
-.nav-img {
-  /* height: 6em;
-  padding: 1.5em;
-  will-change: filter; */
-  transition: filter 300ms;
-}
-
-/*
-
-.nav-img:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-
-
-
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
