@@ -2,160 +2,329 @@
   /* max-width: 1280px; */
   margin: 0 auto;
   /* padding: 2rem; */
-  background-color: #fff; 
+  /* background-color: #fff;  */
   /* background-color: #21222A; */
 position: relative;
  font-family: sans-serif ;
  font-family: 'Inter';
-
+background: linear-gradient(to right, #0b0985c7, #672280) ;
  /* margin: 0; */
   /* text-align: center; */
   height: max-content;
   /* min-width: 800px; */
+  transition: 0.5s ease;
 }
 
-.header{
-  background-color: #fe395c;
+.header {
   display: flex;
-  justify-content: center;
+  height: 55px;
+  justify-content: space-between;
+  padding: 20px ;
   align-items: center;
-  padding: 10px;
-  color: #fff;
-  /* position: sticky; */
-  top: 0;
-  right: 0;
-  
+  box-shadow: 0px 0px 10px #094712;
+  /* background: linear-gradient( to right, #672280, #A626D3); */
+  /* background: linear-gradient( to right, #0b0985, #094712); */
+
+  color: white;
 }
-.header-icon{
-  margin-right: 10px ;
-  
+.header-logo{
+  height: 80%;
+  margin-right: 10px;
+  /* width: 176px; */
+}
+.header-title{
+  font-size: 20px ;
+  margin-right: auto;
+}
+.header-project{
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 30px;
 }
 
-  
-  .travel{
-    display: flex;
-    justify-content: space-around;
-    margin: 90px;
+
+  .meme{
+    padding: 36px;
     align-items: center;
-    font-size: 20px;
-    /* height: 100%; */
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(145, 142, 155,0.25);
-  }
-  .travel-image{
-    height: 400px;
-    margin-right: 10px;
-  }
-  .travel-info{
-    margin-left: 30px;
-    max-height: 400px;
-    margin-top: 10px;
-  }
-  .travel-location {
-    display: flex;
-    align-items: center;
-  }
-  .travel-location-name{
-    margin-right: 20px;
-  }
-  .location-tag { 
-    height: 24px;
+  margin: 50px;
   }
 
-  .travel-title{
-    /* margin-top: 20px; */
-    /* padding: 10px; */
-    font-weight: 700;
-    font-family: 'Inter';
-    font-size: 40px;
+.form{
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 20px;
+  gap: 40px;
   }
   
-  .travel-description{
-      max-width: 50%;
-      
-  }
-  .link-google{
-    color:#918E9B
-  }
-
-  @media (max-width: 1000px ) {
-    #root{
-      max-height: max-content;
+  .form-button{
+    grid-column: 1 / -1;
+    background: linear-gradient( to right, rgb(8, 7, 62), #094712db);
+  /* background: linear-gradient( to right, rgb(11, 9, 133), #094712); */
+    transition: 0.5s ease;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 50px;
     }
-    .travel{
-      font-size: 14px;
-      margin: 40px;
     
-    }
-    .travel-image{
-      height: 250px;
-    }
-    .travel-info{
-      position: relative;
-      margin-top: 20px;
-      height: max-content;
-      line-height: 12px;
-    }
-    .travel-description{
-      max-width: 450px;
-      line-height: 150%;
-    }
-    .travel-title{
-      font-size : 30px;
-      text-overflow: ellipsis;
-      text-wrap: wrap;
-    }
-     
+.form-button:hover{
+  color:#fff;
+  background: transparent ;
+  /* background: rgb(11, 9, 133); */
+  border: 1px solid  #b7c60f;
+  
   }
+  
+  .form-input{
+  border: 1px solid silver;
+  text-indent: 5px;
+  text-transform: uppercase;
+  border: 2px solid #094712;
+  border-radius: 5px;
+  }
+    
+.meme-image-container{
+  position: relative;
+  /* align-self: center; */
+  text-align: center;
+  font-size: 50px;
+  font-family:'Franklin Gothic Medium';
+  font-weight: 700;
+  color: white;
+}
+.meme-image {
+  margin-top: 40px;
+  border-radius: 5px;
+  width: 100%;
+  width: 80%;
+}
+
+.meme-top-text, .meme-bottom-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+
+}
+.meme-top-text{
+  top: 0;
+}
+.meme-bottom-text{
+  bottom: 0;
+}
+
+
+
 
 .footer {
   display: flex;
-  flex-direction: column;
-  background-color: #fff;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  /* background-color: #fff; */
   padding-top: 10px;
   padding-bottom: 15px;
-  border-top: 1px solid  ;
+  border-top: 1px solid  #094712 ;
   border-radius: 3px;
   position: relative;
   width: 100%;
   left: 0; 
-  bottom: -50px;
+  bottom: 0;
   text-align: center;
   color: black;
   font-size: 20px;
   font-weight: bold;
-  color: #fe395c;
+  color: grey;
+  transition: 1.0s ease;
+  
+  }
+  
+  .footer-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer{
+    animation: 1.0s forwards;
+    }
+    .react {
+      margin-left: 20px;
+    }
+    
+    .footer-logo, .footer-react, .footer-vite {
+      width: 40px;
+      margin: 0 50px 3px 0;
+      transition: 1.0s ease;
+      
+      }
+
+      .footer-react {
+        margin-left: 10%;
+        animation: rotate 2.5s linear  infinite  ;
+        
+      }
+      .footer-vite{
+        margin-right: 10%;
+      }
+      .footer-react:hover, .footer-vite:hover{
+        filter: drop-shadow(0 0 30px rgb(11,9,133) );
+      }
+      
+      .footer-logo:hover{
+        filter: drop-shadow(0 0 20px rgb(11,9,133) );
+        transform: rotateY(360deg);
+        }
+        
+        @keyframes rotate {
+          to{ transform: rotate(360deg);}
+          }
+
+
+          @media(max-width: 1500px){
+            #root{
+              height: 100vh;
+            }
+            .footer{
+              position: fixed;
+            }
+          }
+          
+            @media (max-width: 1000px ) {
+              #root{
+                
+                height: 100vh;
+              }
+              .meme{
+                margin: auto;
+                margin-top: 10%;}
+              .form{
+                gap : 20px
+              }
+              .meme-image-container{
+                font-size: 25px;
+              }
+              .meme-image{
+                margin-top: 20px;
+                width: 100%;
+              }
+              .footer{
+                position: fixed;
+              }
+              .form-button{
+                height: auto;
+              }
+            .footer-logo{
+              width: 40px;
+              margin: 0 40px 3px 0;
+            }
+
+          }
+              
+              @media (max-width:700px){
+                #root {
+                  height: 100vh;
+                }
+                /* .footer{position: fixed;} */
+                .footer-logo{
+                  width: 30px;
+                  margin: 0 30px 3px 0;
+                }        
+                .footer{
+                  font-size: 15px;
+                }
+
+              }
+              
+              
+              
+           
+            
+            @media (max-width: 500px){
+             #root{
+              height: 100vh;
+             }
+              .footer{
+                position: fixed;
+                font-size: 15px;
+              }                 
+              .footer-logo{
+                width: 30px;
+                margin: 0 30px 3px 0;
+              }        
+
+              }
+
+              @media screen {
+                .form-button:active{
+                  background: transparent ;
+                  border: 1px solid  #b7c60f;
+             }
+              
+            }
+          
+          
+          
+          
+/* button {
+  color: #fff;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  margin: 30px;
+  background-color: #672280;
+  border: none;
+
 }
+button:hover{
+  cursor: pointer;
+  background-color: red;
+} */
 
-
-.footer{
-  animation: 1.0s forwards;
-}
-
-.footer-logo {
-  width: 40px;
-  margin: 0 30px 3px 0;
-
-}
-
-.footer-logo:hover{
-  filter: drop-shadow(0 0 15px #fe395c );
-  animation: rotate 0.5s linear  infinite  ;
-}
-
-@keyframes rotate {
-  to{ transform: rotate(360deg);}
-}
-
-
-
-
-
-.contacts{
+.state{
+  
   display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
+  flex-direction: column;
+  align-items: center;
 }
+.state-value{
+  text-align: center;
+  border-radius: 60%;
+  width: 80px;
+  padding: 10px;
+  color: #672280;
+  background-color: #fe395c;
+}
+
+
+.count {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* align-items:end; */
+  margin: 20px;
+}
+
+.plus, .minus, .counter {
+  margin: -10px;
+  border-radius: 60%;
+  text-align: center;
+  width: 80px;
+  padding: 15px;
+  background-color: red;
+}
+.plus, .minus {
+  align-self: flex-end;
+  z-index: 1;
+  /* margin: 0; */
+  padding: 12px;
+  width: 40px;
+  font-size: 16px;
+  background-color: rgb(10, 36, 112);
+  /* align-self: baseline; */
+  justify-content: baseline;
+}
+
 
 .contact-card{
   display: flex;
@@ -180,6 +349,7 @@ position: relative;
 }
 
 
+
 .info-group{
   display: flex;
   justify-content: flex-start;
@@ -191,6 +361,28 @@ position: relative;
 .info-group > img {
   height: 25px;
   margin-right: 4px;
+}
+
+.star {
+  height: 14px;
+  cursor: pointer;
+}
+
+.boxes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.box{
+  /* display: block; */
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  margin-right: 30px;
+  border-radius: 7px;
+
 }
 
 
@@ -209,65 +401,3 @@ position: relative;
   background-color: rgba(51, 49, 57, 0.7);
   padding: 20px;
 }
-
-.main{
-  transform: rotate(90deg);
-  height: 40px;
-  margin: auto;
-  z-index: 1;
-}
-
-.battery-top {
-  width: 30px;
-  height: 10px;
-  background: black;
-  margin: 0 auto;
-  border: 3px solid silver;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-}
-
-.battery-content{
-  width: 50px;
-  height: 100px;
-  background: black;
-  position: relative;
-  /* margin: 0 auto; */
-  border: 3px solid silver;
-  border-radius: 18px;
-  padding: 0;
-}
-
-.charge {
-  align-self: center;
-  width: 100%;
-  position: absolute;
-  bottom: 0 ;
-  border-radius: 14px;
-  animation: battery 3s linear infinite  ;
-}
-
-
-@keyframes battery {
-  0% {
-      height: 0%;
-      background: red;
-  }
-  25% {
-      height: 25%;
-      background: orange;
-  }
-      50% {
-      height: 50%;
-      background: yellow;
-  }
-      75% {
-      height: 75%;
-      background: #d7fc83;
-  }
-  100% {
-      height: 100%;
-      background: rgb(0, 255, 0);
-  }
-}
-
