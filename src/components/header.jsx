@@ -1,5 +1,6 @@
 // import Navbar from './navbar'
 // import earth from '../assets/earth.png';
+import react from '../assets/react.svg'
 import trollface from '../assets/trollface.png'
 
 function Header () {
@@ -7,9 +8,17 @@ function Header () {
 
     return (
         <div className='header'>
-            <img src={trollface} className="header-logo" />
+
+                <div>
+            <img src={react} className='header-logo'/>
+            <p className='header-project'>TiredDev</p>
+
+                </div>
+            <div>
+
             <h3 className='header-title'>Meme Generator</h3>
-            <p className='header-project'>React Course - Project 3</p>
+            <img src={trollface} className="header-logo" />
+            </div>
 
         </div>
     )
