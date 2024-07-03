@@ -6,6 +6,8 @@ Customize and create your own memes
 
 View Web App [MEME GENERATOR](https://meme-gen-1.netlify.app/)
 
+!!! Save button not fully functional
+
 
 ### React + Vite
 
