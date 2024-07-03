@@ -1,4 +1,13 @@
-# React + Vite
+# Meme Generator
+
+Customize and create your own memes
+
+![meme-gen](https://github.com/mich-demo23/meme-generator/assets/138993304/1119ac77-3540-452a-a21c-4e22f1d2baa3)
+
+View Live APP [MEME GENERATOR](https://meme-gen-1.netlify.app/)
+
+
+### React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
