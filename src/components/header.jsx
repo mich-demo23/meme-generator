@@ -9,15 +9,15 @@ function Header () {
     return (
         <div className='header'>
 
-                <div>
-            <img src={react} className='header-logo'/>
+                <div className='header-left'>
+            <img src={react} className='header-logo left'/>
             <p className='header-project'>TiredDev</p>
 
                 </div>
-            <div>
+            <div className='header-right'>
 
             <h3 className='header-title'>Meme Generator</h3>
-            <img src={trollface} className="header-logo" />
+            <img src={trollface} className="header-logo right" />
             </div>
 
         </div>
