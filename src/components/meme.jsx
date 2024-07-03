@@ -11,7 +11,7 @@ export default function Meme (){
     const [meme, setMeme] = useState({
         topText: "",
         bottomText: "",
-        randomImage : JSON.parse(sessionStorage.getItem('meme'))  
+        randomImage : JSON.parse(sessionStorage.getItem('meme'))  || "https://i.imgflip.com/1tl71a.jpg"
     })
     const [allMeme, setAllMeme] = useState()
     
@@ -20,6 +20,7 @@ export default function Meme (){
         fetch('https://api.imgflip.com/get_memes')
         .then(res => res.json())
         .then(data => setAllMeme(data.data.memes))
+        console.log(allMeme)
     }, [])
 
     function getMeme() {
